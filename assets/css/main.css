@@ -1,7 +1,59 @@
+/* html tag **********************************************************************/
+
 html, body {
 	margin: 0 0;
 }
 
+h3, h4, h5, h6 {
+	margin: 0 0 0 0;
+}
+
+h1 {
+	margin: 0 0 0 0;
+}
+
+h2 {
+	margin: 50px 0 0 0;
+}
+
+h3 {
+	margin: 40px 0 0 0;
+}
+
+h4 {
+	margin: 30px 0 0 0;
+}
+
+h5 {
+	margin: 20px 0 0 0;
+}
+
+h6 {
+	margin: 10px 0 0 0;
+}
+
+p, pre {
+	margin: 0 0 0 0;
+}
+
+a {
+	color: black;
+}
+
+blockquote {
+	/* 테두리 */
+	border-left: 5px solid blue;
+	/* 기본 외부여백 제거 */
+	margin-left: 0;
+	/* 내부여백 */
+	padding: 10px 10px 10px 10px;
+	/* 기존 크기에서 padding/margin 크기 제거 */
+	width: calc(100% - 5px - 10px);
+	/* 배경색 */
+	background-color: lightgray;
+}
+
+/* semantic tag  **********************************************************************/
 aside {
 	position: fixed;
 	display: flex;
@@ -59,16 +111,36 @@ main {
 	height: 80%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 0 0;
-}
 
-p, pre {
-	margin: 0 0 0 0;
-}
 
-.highlight {
+/* code custom **********************************************************************/
+
+/* code 공통 */
+.highlighter-rouge {
+	/* 배경색 */
 	background-color: lightgray;
-	border: 1px solid gray;
+	/* 테두리 */
+	border: 1px solid black;
+}
+
+/* code 상세 : `code` */
+code.highlighter-rouge {
+	/* 배경색 */
+	background-color: snow;
+	/* 글씨체 */
+	font-style: italic;
+	/* 글씨색 */
+	color: blue;
+	/* 코드 여백 */
+	padding: 0 5px 0 5px;
+}
+
+/* code 상세 : ```code``` */
+div.highlighter-rouge {
+	/* 크기 초과시 줄넘김 */
 	white-space: pre-line;
+	/* 코드 여백 */
+	padding: 10px 10px 10px 10px;
+	/* 위/아래 여백 */
+	margin: 10px 0 10px 0;
 }
