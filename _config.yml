@@ -23,8 +23,9 @@ email: 1721046@gmail.com
 author: kwangmin_kim
 description: >- # this means to ignore newlines until "baseurl:"
  KWANGMIN_KIM 
-baseurl: "https://nologger.github.io/" # the subpath of your site, e.g. /blog
 url: "https://nologger.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
 github_username:  noLogger 
 
 # nav
