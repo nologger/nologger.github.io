@@ -17,7 +17,7 @@ docs:
     url: /
   about:
     title: About
-    url: /docs/About
+    url: /docs/about
   jekyll:
     title: Jekyll
-    url: /docs/Jekyll
+    url: /docs/jekyll
