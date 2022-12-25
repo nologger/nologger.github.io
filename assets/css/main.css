@@ -15,6 +15,12 @@ aside {
 	align-items: flex-end;
 
 	border-right: 1px solid gray;
+
+	background-color: whitesmoke;
+}
+
+.logo {
+	font-size: 60px;
 }
 
 header {
@@ -30,15 +36,26 @@ nav {
 	height: 80%;
 }
 
+nav > ul {
+	list-style: none;
+}
+
+nav > ul > li {
+	height: 30px;
+	text-align: center;
+}
+
 footer {
 	min-width: 300px;
 	display: block;
 	height: 20%;
+
+	color: gray;
 }
 
 main {
 	margin-left: 40%;
-	padding-top: 50px;
+	padding-top: 70px;
 	padding-left: 50px;
 	min-width: 300px;
 	max-width: 800px;
@@ -52,4 +69,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, pre {
 	margin: 0 0 0 0;
+}
+
+.highlight {
+	background-color: lightgray;
+	border: 1px solid gray;
+	white-space: pre-line;
 }

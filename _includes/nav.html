@@ -1,3 +1,7 @@
 <nav>
-    nav section
+    <ul>
+        {% for doc in site.docs %}
+            <li><a href="{{ doc[1].url }}">{{ doc[1].title }}</a></li>        
+        {% endfor %}
+    </ul>
 </nav>
