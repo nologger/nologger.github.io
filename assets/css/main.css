@@ -4,10 +4,6 @@ html, body {
 	margin: 0 0;
 }
 
-h3, h4, h5, h6 {
-	margin: 0 0 0 0;
-}
-
 h1 {
 	margin: 0 0 0 0;
 }
@@ -38,6 +34,10 @@ p, pre {
 
 a {
 	color: black;
+}
+
+p {
+	margin : 20px 0;
 }
 
 blockquote {
