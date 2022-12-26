@@ -7,7 +7,7 @@ description: >-
 github_username:  noLogger 
 
 # url
-url: "https://nologger.github.io/"
+url: "https://nologger.github.io"
 baseurl: ""
 
 # nav (ui max 10)
