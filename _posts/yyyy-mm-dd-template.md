@@ -6,21 +6,16 @@ category: "input category"
 ---
 
 {% raw %}
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
+# title
 
 > quote
 
-`code`
-```language
-code
-```
+* * *
+
+1. index
 
 * * *
-hr
-* * *
+
+## 1. index
+
 {% endraw %}

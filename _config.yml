@@ -12,12 +12,15 @@ baseurl: ""
 
 # nav (ui max 10)
 docs:
-  home:
+  Home:
     title: Home
     url: /
-  about:
+  About:
     title: About
     url: /docs/about
-  jekyll:
+  Jekyll:
     title: Jekyll
     url: /docs/jekyll
+  ProgrammingMethodology:
+    title: ProgrammingMethodology
+    url: /docs/programmingMethodology
