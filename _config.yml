@@ -24,3 +24,6 @@ docs:
   ProgrammingMethodology:
     title: ProgrammingMethodology
     url: /docs/programmingMethodology
+  Spring:
+    title: Spring
+    url: /docs/spring
