@@ -1,0 +1,28 @@
+# site.data.document
+- name: Home
+  id: DOCUMENT_001
+  parentId: ''
+  link: /
+  isRoot: true
+  visible: true
+
+- name: About
+  id: DOCUMENT_002
+  parentId: ''
+  link: /about
+  isRoot: true
+  visible: true
+
+- name: Categorization
+  id: DOCUMENT_003
+  parentId: ''
+  link: ''
+  isRoot: false
+  visible: true
+
+- name: Java
+  id: DOCUMENT_004
+  parentId: DOCUMENT_003
+  link: /docs/java
+  isRoot: true
+  visible: true

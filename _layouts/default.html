@@ -6,12 +6,8 @@
 <html lang={{ site.lang | default: 'ko' }}">
 {% include head.html %}
 <body>
-    <aside>
-        {% include header.html %}
-        {% include nav.html %}
-        {% include footer.html %}
-    </aside>
-    
+    {% include aside.html %}
+
     <main>
         {{ content }}
     </main>

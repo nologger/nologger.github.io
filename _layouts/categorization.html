@@ -1,0 +1,33 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang={{ site.lang | default: 'ko' }}">
+{% include head.html %}
+<body>
+    {% include aside.html %}
+
+    <main>
+        <h1>{{ page.title | upcase }}</h1>
+        <br>
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == page.title %}
+            {% for post in site.posts %}
+            {% for categoryForPost in post.categories%}
+            {% if categoryForPost == category[0] %}
+            <li>
+                <a href="{{ post.url | absolute_url }}">
+                    [{{ post.date | date : "%Y-%m-%d" }}] {{ post.title }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>

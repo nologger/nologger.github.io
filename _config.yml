@@ -1,29 +1,16 @@
-# info
-title: noLogger 
-email: 1721046@gmail.com
-author: kwangmin_kim
-description: >-
- KWANGMIN_KIM 
-github_username:  noLogger 
+# NoLogger
+NoLogger:
+  github.io:
+    link: https://nologger.github.io
+  home:
+    link: https://www.nologger.com
+  admin:
+    link: https://www.nologger.admin.com
 
-# url
-url: "https://nologger.github.io"
-baseurl: ""
-
-# nav (ui max 10)
-docs:
-  Home:
-    title: Home
-    url: /
-  About:
-    title: About
-    url: /docs/about
-  Jekyll:
-    title: Jekyll
-    url: /docs/jekyll
-  ProgrammingMethodology:
-    title: ProgrammingMethodology
-    url: /docs/programmingMethodology
-  Spring:
-    title: Spring
-    url: /docs/spring
+# site.info
+info:
+  id: NoLogger.github.io
+  title: NoLogger
+  author: Kwangmin-Kim
+  email: 1721046@gmail.com
+  gitHub: noLogger
