@@ -26,3 +26,10 @@
   link: /docs/java
   isRoot: true
   visible: true
+
+- name: ps-code
+  id: DOCUMENT_005
+  parentId: DOCUMENT_003
+  link: /docs/ps-code
+  isRoot: true
+  visible: true
