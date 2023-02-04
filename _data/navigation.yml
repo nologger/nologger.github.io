@@ -13,6 +13,13 @@
   isRoot: true
   visible: true
 
+- name: Book
+  id: DOCUMENT_007
+  parentId: ''
+  link: /book
+  isRoot: true
+  visible: true
+
 - name: Categorization
   id: DOCUMENT_003
   parentId: ''
@@ -20,7 +27,7 @@
   isRoot: false
   visible: true
 
-- name: Java
+- name: java
   id: DOCUMENT_004
   parentId: DOCUMENT_003
   link: /docs/java
@@ -31,5 +38,12 @@
   id: DOCUMENT_005
   parentId: DOCUMENT_003
   link: /docs/ps-code
+  isRoot: true
+  visible: true
+
+- name: project-design
+  id: DOCUMENT_006
+  parentId: DOCUMENT_003
+  link: /docs/project-design
   isRoot: true
   visible: true
