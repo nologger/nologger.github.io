@@ -41,6 +41,7 @@ title: "NoLogger-admin"
 - `admin.nologger.com`에서 `nologger.github.io` 변경내역을 확인 할 수 있어야 한다.
 - `admin.nologger.com`에서 `nologger.github.io` 게시글을 올릴 수 있어야 한다.
 - `admin.nologger.com`에서 `nologger.github.io` 게시글을 수정할 수 있어야 한다.
+- `admin.nologger.com`에서 `nologger.github.io` 게시글을 수정했을 때 게시글 내에 수정일을 남겨야 한다.
 - `admin.nologger.com`에서 `nologger.github.io` 게시글을 삭제할 수 있어야 한다.
 - `admin.nologger.com`에서 `nologger.github.io` 게시글 미리보기 기능을 지원해야 한다.
 - `admin.nologger.com`에서 `nologger.github.io` 세부 레이아웃(jekyll-layouts)를 수정할 수 있어야 한다.
