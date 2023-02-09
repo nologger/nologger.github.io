@@ -16,7 +16,7 @@
             {% if category[0] == page.title %}
             {% for post in site.posts %}
             {% for categoryForPost in post.categories%}
-            {% if categoryForPost == category[0] %}
+            {% if categoryForPost == category[0] and post.visible != false %}
             <li>
                 <a href="{{ post.url | absolute_url }}">
                     [{{ post.date | date : "%Y-%m-%d" }}] {{ post.title }}
