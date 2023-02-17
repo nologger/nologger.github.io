@@ -5,7 +5,6 @@ tags: "programmers", "baekjoon"
 visible: false
 ---
 
-{% raw %}
 # Title
 > programmers || baekjoon
 > url
@@ -24,8 +23,7 @@ visible: false
 
 ## 3. 코드
 
+{% raw %}
 ```java
 ```
-
 {% endraw %}
-
