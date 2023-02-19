@@ -107,7 +107,72 @@ title: "NoLogger-admin"
 
 ## 5. 상세 설계
 
-null
+```
+─ NoLogger-Admin ───┬ Admin ┬ MenuManagement ───┬ Create Menu ──┬ set menu id(auto)
+                    │       │                   │               ├ set menu link
+                    │       │                   │               ├ set menu name
+                    │       │                   │               └ set menu order
+                    │       │                   ├ Modify Menu ──┬ set menu id(auto)
+                    │       │                   │               ├ set menu link
+                    │       │                   │               ├ set menu name
+                    │       │                   │               └ set menu order
+                    │       │                   └ Delete Menu
+                    │       │
+                    │       ├ AdminManagement ──┬ Create Member ┬ set member id(auto)
+                    │       │                   │               ├ set member account
+                    │       │                   │               ├ set member password
+                    │       │                   │               ├ set member name
+                    │       │                   │               ├ set member email
+                    │       │                   │               ├ set member phoneNumber
+                    │       │                   │               ├ set member ip address1
+                    │       │                   │               ├ set member ip address2
+                    │       │                   │               └ set member ip address3
+                    │       │                   ├ Modify Member ┬ update member id(auto)
+                    │       │                   │               ├ update member account
+                    │       │                   │               ├ update member password
+                    │       │                   │               ├ update member name
+                    │       │                   │               ├ update member email
+                    │       │                   │               ├ update member phoneNumber
+                    │       │                   │               ├ update member ip address1
+                    │       │                   │               ├ update member ip address2
+                    │       │                   │               └ update member ip address3
+                    │       │                   └ Delete Member
+                    │       │
+                    │       └ Statistics
+                    │
+                    └ NoLogger ─┬ MenuManagement ───┬ Create Menu ──┬ set menu id(auto)
+                                │                   │               ├ set menu link    
+                                │                   │               ├ set menu name
+                                │                   │               ├ set menu order
+                                │                   │               ├ set parent id
+                                │                   ├ Modify Menu ──┬ set menu id(auto)
+                                │                   │               ├ set menu link
+                                │                   │               ├ set menu name
+                                │                   │               ├ set menu order
+                                │                   │               └ set parent id
+                                │                   └ Delete Menu
+                                │
+                                └ PostManagement ───┬ Create Post ──┬ set post id(auto)
+                                                    │               ├ set post title
+                                                    │               ├ set post content
+                                                    │               ├ set post author
+                                                    │               ├ set post isVisible
+                                                    │               ├ set post Synchronize
+                                                    │               ├ set post createdAt
+                                                    │               ├ set post modifiedAt
+                                                    │               ├ set post category(menu) id
+                                                    └ View Post ────┬ update post id(auto)
+                                                                    ├ update post title
+                                                                    ├ update post content
+                                                                    ├ update post author
+                                                                    ├ update post isVisible
+                                                                    ├ update post Synchronize
+                                                                    ├ update post createdAt
+                                                                    ├ update post modifiedAt
+                                                                    ├ update post category(menu) id
+                                                                    └ delete post
+
+```
 
 ## 6. 코드 작성 및 디버깅
 
