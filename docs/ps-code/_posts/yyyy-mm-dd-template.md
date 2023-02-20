@@ -6,8 +6,8 @@ visible: false
 ---
 
 # {{ page.title }}
-> programmers || baekjoon
-> url
+> [programmers] url
+> [baekjoon] url
 
 * * *
 
