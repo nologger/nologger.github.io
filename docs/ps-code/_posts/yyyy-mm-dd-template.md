@@ -5,7 +5,7 @@ tags: "programmers", "baekjoon"
 visible: false
 ---
 
-# Title
+# {{ page.title }}
 > programmers || baekjoon
 > url
 
