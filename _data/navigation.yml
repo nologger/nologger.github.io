@@ -47,3 +47,10 @@
   link: /docs/project-design
   isRoot: true
   visible: true
+
+- name: network
+  id: DOCUMENT_008
+  parentId: DOCUMENT_003
+  link: /docs/network
+  isRoot: true
+  visible: true
