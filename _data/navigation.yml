@@ -54,3 +54,10 @@
   link: /docs/network
   isRoot: true
   visible: true
+
+- name: git
+  id: DOCUMENT_009
+  parentId: DOCUMENT_003
+  link: /docs/git
+  isRoot: true
+  visible: true
