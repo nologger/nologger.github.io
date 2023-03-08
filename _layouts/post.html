@@ -1,11 +1,35 @@
 ---
-layout: default
 ---
 
-<h1>[{{page.date | date : "%Y-%m-%d"}}] {{ page.title }}</h1>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NoLogger</title>
+  <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header>
+  <h1><a href="/">NoLogger</a></h1>
+</header>
+<div class="path">
+  {% assign url = "" %}
+  {% for nav in site.data.navigation %}
+    {% if nav.name == page.category %}
+        {% assign url = nav.link %}
+    {% endif %}
+  {% endfor %}
+  <a href="/">home</a> / <a href="{{ url }}">{{ page.category }}</a>
+</div>
+<hr>
 <br>
-<br>
-<br>
-
-{{ content }}
+<main>
+  <div class="container">
+    <div><h1>{{ page.title }}</h1></div>
+    <div style="background-color:ghostwhite; padding: 10px 10px 10px 10px;">
+        {{ content  }}
+    </div>
+    <div style="color:gray;float:right"><small>created at: {{ page.date | date : "%Y-%m-%d" }}</small></div>
+  </div>
+</main>
+</body>
+</html>

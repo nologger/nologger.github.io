@@ -1,63 +1,6 @@
-# site.data.document
-- name: Home
-  id: DOCUMENT_001
-  parentId: ''
-  link: /
-  isRoot: true
-  visible: true
+# site.data.navigation
+- name: jekyll
+  link: /category/jekyll
 
-- name: About
-  id: DOCUMENT_002
-  parentId: ''
-  link: /about
-  isRoot: true
-  visible: true
-
-- name: Book
-  id: DOCUMENT_007
-  parentId: ''
-  link: /book
-  isRoot: true
-  visible: true
-
-- name: Categorization
-  id: DOCUMENT_003
-  parentId: ''
-  link: ''
-  isRoot: false
-  visible: true
-
-- name: java
-  id: DOCUMENT_004
-  parentId: DOCUMENT_003
-  link: /docs/java
-  isRoot: true
-  visible: true
-
-- name: ps-code
-  id: DOCUMENT_005
-  parentId: DOCUMENT_003
-  link: /docs/ps-code
-  isRoot: true
-  visible: true
-
-- name: project-design
-  id: DOCUMENT_006
-  parentId: DOCUMENT_003
-  link: /docs/project-design
-  isRoot: true
-  visible: true
-
-- name: network
-  id: DOCUMENT_008
-  parentId: DOCUMENT_003
-  link: /docs/network
-  isRoot: true
-  visible: true
-
-- name: git
-  id: DOCUMENT_009
-  parentId: DOCUMENT_003
-  link: /docs/git
-  isRoot: true
-  visible: true
+- name: spring
+  link: /category/spring

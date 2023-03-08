@@ -1,0 +1,44 @@
+---
+title: uncategory
+link: /category/uncategory
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NoLogger</title>
+  <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header>
+  <h1><a href="/">NoLogger</a></h1>
+</header>
+<div class="path">
+  <a href="/">home</a> / <a href="{{ page.link }}">{{ page.title }}</a>
+</div>
+<hr>
+<br>
+<main>
+  <ul>
+    {% for post in site.posts %}
+        {% assign flag = true %}
+        {% for nav in site.data.navigation %}
+            {% if post.category == nav.name %}
+                {% assign flag = false %}
+            {% endif %}
+        {% endfor %}
+
+        {% if flag %}
+            <li>
+                <a href="{{ post.url | absolute_url }}">
+                    <span><small>[{{ post.date | date : "%Y-%m-%d" }}]</small></span>
+                    <span><small>[{{ post.category }}]</small></span>
+                    <span></span>{{ post.title }}</span>
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+</main>
+</body>
+</html>

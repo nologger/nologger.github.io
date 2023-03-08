@@ -1,4 +1,0 @@
----
-title: git
-layout: categorization
----

@@ -1,4 +1,0 @@
----
-title: network
-layout: categorization
----
