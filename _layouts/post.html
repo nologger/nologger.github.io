@@ -18,7 +18,7 @@
         {% assign url = nav.link %}
     {% endif %}
   {% endfor %}
-  <a href="/">home</a> / <a href="{{ url }}">{{ page.category }}</a>
+  <a href="/">home</a> / <a href="{{ url }}">{{ page.category }}</a> / <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
 </div>
 <br>
 <main>
