@@ -35,7 +35,7 @@ jekyll 4.3.1
 # 3. $ ridk install
 ```
 
-## 2. jekyll 생성
+# 2. jekyll 생성
 
 ```bash
 $ cd my-path/dev/projects/jekyllBlog
@@ -45,4 +45,4 @@ $ bundelr exec jekyll serve
 ... localhost:4000/
 ```
 
-## 3. GitHub Repository 연결
+# 3. GitHub Repository 연결

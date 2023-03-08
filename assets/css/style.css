@@ -1,5 +1,5 @@
 html, body {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px;
     font-family: monospace;
 }
 
@@ -9,4 +9,19 @@ ul {
 
 a {
     color: blue;
+    text-decoration: none;
+}
+
+/* custom */
+pre.highlight {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+code.highlighter-rouge {
+    color: blue;
+    border: 1px solid blue;
+    padding: 0 5px 0 5px;
+    background-color: ghostwhite;
 }

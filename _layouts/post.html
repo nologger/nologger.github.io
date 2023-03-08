@@ -20,12 +20,11 @@
   {% endfor %}
   <a href="/">home</a> / <a href="{{ url }}">{{ page.category }}</a>
 </div>
-<hr>
 <br>
 <main>
   <div class="container">
-    <div><h1>{{ page.title }}</h1></div>
-    <div style="background-color:ghostwhite; padding: 10px 10px 10px 10px;">
+    <div><h1 style="font-weight:100px;">【 {{ page.title }} 】</h1></div>
+    <div style="padding: 10px 10px 10px 10px;">
         {{ content  }}
     </div>
     <div style="color:gray;float:right"><small>created at: {{ page.date | date : "%Y-%m-%d" }}</small></div>
