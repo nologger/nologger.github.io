@@ -4,7 +4,7 @@ category: ide
 layout: post
 ---
 
-> Intellij community 프로그램에서 외부 Tomcat을 이용한 프로젝트 실행과정을 나타낸다.
+> Intellij community에서 외장 Tomcat을 내장처럼 이용하여 프로젝트 실행하는 과정을 나타낸다.
 
 ***
 
@@ -166,13 +166,11 @@ import java.io.File;
 
 public class SpringMvcApplication {
     public static void main(String[] args) throws ServletException, LifecycleException {
-        String webappDirLocation = "src/main/webapp/";
-        Tomcat tomcat = new Tomcat();
-        String webPort = "8080";
 
-        StandardContext ctx = (StandardContext)tomcat.addWebapp("/", (new File(webappDirLocation)).getAbsolutePath());
+        Tomcat tomcat = new Tomcat();        
+        StandardContext ctx = (StandardContext)tomcat.addWebapp("/", (new File("src/main/webapp/")).getAbsolutePath());
 
-        tomcat.setPort(Integer.parseInt(webPort));
+        tomcat.setPort(8080);
         tomcat.start();
         tomcat.getServer().await();
     }
