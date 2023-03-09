@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "tiltwrap";
+    src: url("/assets/font/Tilt_Warp/TiltWarp-Regular-VariableFont_XROT,YROT.ttf") format("truetype");
+}
+
 html, body {
     margin: 20px 20px;
     max-width: 1200px;
@@ -13,7 +18,12 @@ a {
     text-decoration: none;
 }
 
-/* custom */
+main h1, h2, h3, h4, h5, h6 {
+    margin-top: 50px;
+    font-family: "tiltwrap", Georgia;
+}
+
+/* custom tag */
 pre.highlight {
     background-color: lightgray;
     border: 1px solid black;
