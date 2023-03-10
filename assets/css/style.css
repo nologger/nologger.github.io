@@ -13,8 +13,14 @@ ul {
     list-style-type: square;
 }
 
+dd {
+    border-left: 3px solid gray;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
 a {
-    color: blue;
+    color: #660000;
     text-decoration: none;
 }
 
@@ -31,8 +37,8 @@ pre.highlight {
 }
 
 code.highlighter-rouge {
-    color: blue;
-    border: 1px solid blue;
+    color: crimson;
+    border: 1px solid crimson;
     padding: 0 5px 0 5px;
     background-color: ghostwhite;
 }
