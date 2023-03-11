@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: main
+title: Book
+link: /book
 ---
 
 **기술서적**
