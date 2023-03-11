@@ -53,7 +53,7 @@ custom tag
 }
 
 .content pre {
-    white-space: break-spaces;
+    overflow: auto;
 }
 
 pre.highlight {
