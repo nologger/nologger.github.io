@@ -1,12 +1,19 @@
+/**************************************************************
+set font
+***************************************************************/
 @font-face {
     font-family: "tiltwrap";
     src: url("/assets/font/Tilt_Warp/TiltWarp-Regular-VariableFont_XROT,YROT.ttf") format("truetype");
 }
 
+/**************************************************************
+html tag
+***************************************************************/
 html, body {
     margin: 20px 20px;
     max-width: 1200px;
     font-family: monospace;
+    overflow: auto;
 }
 
 ul {
@@ -29,7 +36,30 @@ main h1, h2, h3, h4, h5, h6 {
     font-family: "tiltwrap", Georgia;
 }
 
-/* custom tag */
+blockquote {
+    border-left: 3px solid gray;
+    padding-left: 10px;
+}
+
+p {
+    margin-top: 30px;
+}
+/**************************************************************
+custom tag
+***************************************************************/
+
+
+/* 크기 넘어설 경우 개행처리
+.content {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.content pre {
+    white-space: break-spaces;
+}
+*/
+
 pre.highlight {
     background-color: lightgray;
     border: 1px solid black;

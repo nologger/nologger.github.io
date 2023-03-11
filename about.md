@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+---
+---
+
 <html>
 <head>
   <title>NoLogger</title>
@@ -9,15 +11,11 @@
   <h1><a href="/">NoLogger</a></h1>
 </header>
 <div class="path">
-  <a href="/">home</a> / <a href="/book">book</a> /
+  <a href="/">home</a> / <a href="/about">about</a> /
 </div>
 <br>
 <main>
-  <b>기술서적</b>
-  <ul>
-    <li>스프링 코딩 공작소_송미영(23.03.11~)
-    </li>
-  </ul>
+    contact: 1721046@gmail.com
 </main>
 </body>
 </html>

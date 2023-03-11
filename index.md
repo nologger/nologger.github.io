@@ -1,7 +1,6 @@
 ---
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>NoLogger</title>
@@ -48,7 +47,7 @@
                       <a href="{{ post.url | absolute_url }}">
                         <span><small>[{{ post.date | date : "%Y-%m-%d" }}]</small></span>
                         <span><small>[{{ post.category }}]</small></span>
-                        <span></span>{{ post.title }}</span>
+                        <span>{{ post.title }}</span>
                       </a>
                     </li>
                     {% endfor %}

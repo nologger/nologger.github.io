@@ -3,7 +3,6 @@ title: uncategory
 link: /category/uncategory
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
   <title>NoLogger</title>
