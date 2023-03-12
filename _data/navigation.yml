@@ -1,9 +1,13 @@
 # site.data.navigation
-- name: jekyll
-  link: /category/jekyll
+- name: java
+  link: /category/java
 
 - name: spring
   link: /category/spring
 
+- name: jekyll
+  link: /category/jekyll
+
 - name: ide
   link: /category/ide
+  
