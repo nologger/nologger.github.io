@@ -86,7 +86,7 @@ src
 `web.xml`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-    <!-- 네임 스페이스와 스키마 선언 ########################################################################-->
+<!-- 네임 스페이스와 스키마 선언 ########################################################################-->
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
@@ -97,19 +97,17 @@ src
     <!-- The definition of the Root Spring container shared by all Servelts and Filters -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>org.springframework.web.servlet.DispatcherServlet</param-value>
+        <param-value>
+            /WEB-INF/spring/root-context.xml
+        </param-value>
     </context-param>
-
     <!-- Creates the Spring Container shared by all Servlets and Filters -->
-    <!--
     <listener>
-        <listener-class>org.springframework.web.context.xml</listener-class>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-    -->
     <!-- //루트 컨텍스트 설정 ###############################################################################-->
 
-
-
+    
     <!-- 서블릿 컨텍스트 설정 ###############################################################################-->
     <!-- Processes application requests -->
     <servlet>
@@ -144,53 +142,43 @@ src
 
 `root-context.xml`
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                           http://www.springframework.org/schema.beans/spring-beans.xsd">
-    <!-- Root Context : defines shared resources visible to all other web components -->
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Root Context: defines shared resources visible to all other web components -->
+
 </beans>
 ```
 
 `servlet-context-xml`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc.xsd
-        http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd">
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:context="http://www.springframework.org/schema/context"
+             xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
     <!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 
     <!-- Enables the Spring MVC @Controller programming model -->
-    <mvc:annotation-driven/>
-    <mvc:default-servlet-handler/>
+    <annotation-driven enable-matrix-variables="true"/>
 
     <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-    <mvc:resources mapping="/resources/**" location="WEB-INF/resources/" />
+    <resources mapping="/resources/**" location="/resources/" />
 
     <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="WEB-INF/views/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+    <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <beans:property name="prefix" value="/WEB-INF/views/" />
+        <beans:property name="suffix" value=".jsp" />
+    </beans:bean>
 
-    <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
-        <property name="contentType" value="text/html; charset=UTF-8"/>
-    </bean>
-
-    <bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
-        <property name="order" value="0"/>
-    </bean>
-
-    <context:component-scan base-package="kim"/>
-</beans>
+    <context:component-scan base-package="kim" />
+</beans:beans>
 ```
 
 `SpringWebMvcApplication.java`
